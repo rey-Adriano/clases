@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>divisible entre</title>
+</head>
+<body>
+    <p id="parrafo1"></p>
+    
+</body>
+<script type="text/javascript">
+
+var numero; 
+numero   = prompt("ingrese un numero "); 
+
+do{
+
+
+if(numero % 2 == 0 ){
+ document.getElementById("parrafo1").innerHTML="el numero "+ numero+ "es es divisible entre 2";
+
+    if(numero % 3 == 0 ){
+        document.getElementById("parrafo1").innerHTML="el numero "+ numero+ "es divisible entre 3";
+
+    if(numero % 5 == 0 ){
+         document.getElementById("parrafo1").innerHTML="el numero "+ numero+ "es es divisible entre 5";
+
+  if(numero % 7 == 0 ){
+      document.getElementById("parrafo1").innerHTML="el numero "+ numero+ "es es divisible entre 7";
+}
+}
+}
+}
+
+}while(numero % 2 == 0 || numero % 3 == 0  || numero % 5 == 0  ||numero % 7 == 0 )
+document.getElementById("parrafo1").innerHTML="el numero "+ numero+ " no  es divisible entre 2, 3 ,5 ,7";
+
+
+  
+
+
+
+</script>
+
+</html>

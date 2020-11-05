@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bucles</title>
+</head>
+<body>
+    <p id="parrafo1"></p>
+    
+</body>
+<script type="text/javascript">
+
+var final=window.prompt("ingrese cuantos numeros busca"); 
+var divisible = prompt("ingrese los el numero de que desee los disibles"); 
+
+var control =0; 
+var incremental =1;
+do{
+if (incremental % divisible==0) {
+    control++; 
+    document.getElementById("parrafo1").innerHTML +=control+"-nro"+ incremental+"<br>"; 
+     
+}
+incremental++;
+}while(control<final)
+
+/*var control =0; 
+var incremental =1; 
+do{
+if (incremental % 5==0) {
+    document.getElementById("parrafo1").innerHTML +=control+"-nro"+ incremental+"<br>"; 
+     control++; 
+}
+incremental++;
+}while(control<10)*/
+
+
+// bucles for 
+for(var i=0; i<=10 ; i++  ){
+console.log("valor "+i ); 
+document.getElementById("parrafo1").innerHTML +="valor "+ i+"<br>"; 
+}
+
+//do... while
+var x,y; 
+x=0; 
+y=10;
+do{
+console.log("do valor "+ x); 
+x++; 
+y++; 
+}while(y<=20);
+
+//while
+x=0; 
+y=10;
+while(y<=20){
+    console.log("whilw valor "+ x); 
+    x++; 
+    y++;
+}
+
+
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>programa si es numero primo</title>
+</head>
+<body>
+     <p id="parrafo1"></p>
+</body>
+<script type="text/javascript">
+    
+    var numero, divisor=1, divisores =0 ; 
+    
+    numero = prompt("ingrese un numero "); 
+
+    do{
+        if(numero % divisor == 0){
+            divisores++; 
+        }
+        divisor++; 
+    }while(divisor<=numero)
+    if (divisores == 2) {
+        document.getElementById("parrafo1").innerHTML="el numero "+ numero+ "es primo";
+        
+    }
+    else{
+        document.getElementById("parrafo1").innerHTML="el numero "+ numero+ "no es  primo";
+    }
+    </script>
+
+</html>
